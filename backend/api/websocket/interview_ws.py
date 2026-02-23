@@ -11,7 +11,7 @@ from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
 from models.schemas import InterviewPhase
 from services.session_manager import session_manager
-from agents.conductor_agent import create_conductor_agent
+from agents.interview.conductor_agent import create_conductor_agent
 
 from google.adk.runners import Runner, LiveRequestQueue, RunConfig
 from google.adk.sessions import InMemorySessionService

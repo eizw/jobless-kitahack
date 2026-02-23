@@ -6,8 +6,8 @@ Runs after an interview completes.
 import logging
 from typing import Optional, Dict, Any
 
-from agents.evaluator_agent import EvaluatorAgent
-from agents.feedback_agent import FeedbackAgent
+from agents.interview.evaluator_agent import EvaluatorAgent
+from agents.interview.feedback_agent import FeedbackAgent
 from services.session_manager import session_manager
 from services import firestore_service
 from models.schemas import InterviewStatus
